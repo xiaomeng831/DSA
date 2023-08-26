@@ -1,5 +1,5 @@
-# HashSet中的元素唯一
-# HashMap中的key唯一
+# set中的元素唯一
+# dict中的key唯一
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         hashset = set()
