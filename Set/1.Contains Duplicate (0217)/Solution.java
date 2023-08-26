@@ -1,4 +1,4 @@
-// HashSet中的元素唯一
+// Set中的元素唯一
 // HashMap中的key唯一
 class Solution {
     public boolean containsDuplicate(int[] nums) {
