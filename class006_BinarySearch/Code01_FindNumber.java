@@ -1,5 +1,7 @@
 package class006_BinarySearch;
 
+//普通二分法
+//leetcode https://leetcode.com/problems/binary-search/
 public class Code01_FindNumber {
 
     public static int findNumber(int[] arr, int num) {
