@@ -2,6 +2,8 @@ package class006_BinarySearch;
 
 import java.util.Arrays;
 
+// leetcode https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array
+// leetcode (4) hot100 (3)
 public class Code05_Leetcode34 {
     public static int[] searchRange(int[] arr, int num) {
 

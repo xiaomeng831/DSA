@@ -5,6 +5,7 @@ public class Code02_FindLeft {
 
     public static int findLeft(int[] arr, int num) {
         // leetcode 35 https://leetcode.com/problems/search-insert-position/
+        // leetcode (2) hot100 (2)
         // 如果num比所有元素都大，插入到最后
         // int ans = arr.length
         int ans = -1;

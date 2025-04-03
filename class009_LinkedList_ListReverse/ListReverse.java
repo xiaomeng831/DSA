@@ -2,15 +2,15 @@ package class009_LinkedList_ListReverse;
 
 public class ListReverse {
 
-    public static class ListNode{
+    public static class ListNode {
         int val;
         ListNode next;
 
-        public ListNode(int val){
+        public ListNode(int val) {
             this.val = val;
         }
 
-        public ListNode(int val, ListNode next){
+        public ListNode(int val, ListNode next) {
             this(val);
             this.next = next;
         }
@@ -21,11 +21,11 @@ public class ListReverse {
         DoubleLinkedList last;
         DoubleLinkedList next;
 
-        public DoubleLinkedList(int val){
+        public DoubleLinkedList(int val) {
             this.val = val;
         }
 
-        public DoubleLinkedList(int val, DoubleLinkedList last, DoubleLinkedList next){
+        public DoubleLinkedList(int val, DoubleLinkedList last, DoubleLinkedList next) {
             this(val);
             this.last = last;
             this.next = next;
@@ -33,13 +33,14 @@ public class ListReverse {
 
     }
 
-    //单链表反转
-    //leetcode 206 https://leetcode.com/problems/reverse-linked-list
-    public static ListNode reverseList(ListNode head){
+    // 单链表反转
+    // leetcode 206 https://leetcode.com/problems/reverse-linked-list
+    // leetcode (5) hot100 (4)
+    public static ListNode reverseList(ListNode head) {
         ListNode pre = null;
         ListNode next = null;
 
-        while(head != null){
+        while (head != null) {
             next = head.next;
             head.next = pre;
             pre = head;
@@ -49,12 +50,12 @@ public class ListReverse {
         return pre;
     }
 
-    //双单链表反转
-    public static DoubleLinkedList reverseDoubleList(DoubleLinkedList head){
+    // 双单链表反转
+    public static DoubleLinkedList reverseDoubleList(DoubleLinkedList head) {
         DoubleLinkedList pre = null;
         DoubleLinkedList next = null;
 
-        while(head != null){
+        while (head != null) {
             next = head.next;
             head.next = pre;
             head.last = next;
@@ -65,7 +66,7 @@ public class ListReverse {
         return pre;
     }
 
-    //run
+    // run
     public static void main(String[] args) {
         // 测试单链表反转
         ListNode node1 = new ListNode(1);

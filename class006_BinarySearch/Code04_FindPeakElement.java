@@ -1,6 +1,7 @@
 package class006_BinarySearch;
 
-//leetcode 162 https://leetcode.com/problems/find-peak-element/
+// leetcode 162 https://leetcode.com/problems/find-peak-element/
+// leetcode (3)
 public class Code04_FindPeakElement {
 
     public static int findPeakElement(int[] arr) {
@@ -35,7 +36,7 @@ public class Code04_FindPeakElement {
     }
 
     public static void main(String[] args) {
-        int[] array = {1, 2, 1, 3, 5, 6, 4};
+        int[] array = { 1, 2, 1, 3, 5, 6, 4 };
         System.out.println("index: " + findPeakElement(array));
     }
 }
