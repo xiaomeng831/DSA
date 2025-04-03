@@ -42,4 +42,24 @@ public class MergeTwoLists {
         return head;
     }
 
+    // run
+    public static void main(String[] args) {
+        // 创建第一个链表：1 -> 3 -> 5
+        ListNode head1 = new ListNode(1, new ListNode(3, new ListNode(5)));
+
+        // 创建第二个链表：2 -> 4 -> 6
+        ListNode head2 = new ListNode(2, new ListNode(4, new ListNode(6)));
+
+        // 合并两个有序链表
+        ListNode mergedHead = mergeTwoLists(head1, head2);
+
+        // 打印合并后的链表
+        System.out.print("Merged List: ");
+        while (mergedHead != null) {
+            System.out.print(mergedHead.val + " ");
+            mergedHead = mergedHead.next;
+        }
+        System.out.println();
+    }
+
 }
