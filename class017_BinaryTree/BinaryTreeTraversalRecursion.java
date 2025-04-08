@@ -14,32 +14,32 @@ public class BinaryTreeTraversalRecursion {
     }
 
     // 先序遍历: 中 左 右
-    public static void preOrder(TreeNode head) {
+    public static void preorder(TreeNode head) {
         if (head == null) {
             return;
         }
         System.out.print(head.val + " ");
-        preOrder(head.left);
-        preOrder(head.right);
+        preorder(head.left);
+        preorder(head.right);
     }
 
     // 中序遍历: 左 中 右
-    public static void inOrder(TreeNode head) {
+    public static void inorder(TreeNode head) {
         if (head == null) {
             return;
         }
-        preOrder(head.left);
+        inorder(head.left);
         System.out.print(head.val + " ");
-        preOrder(head.right);
+        inorder(head.right);
     }
 
     // 后序遍历: 左 右 中
-    public static void posOrder(TreeNode head) {
+    public static void postorder(TreeNode head) {
         if (head == null) {
             return;
         }
-        preOrder(head.left);
-        preOrder(head.right);
+        postorder(head.left);
+        postorder(head.right);
         System.out.print(head.val + " ");
     }
 
@@ -66,15 +66,15 @@ public class BinaryTreeTraversalRecursion {
         head.right.left = new TreeNode(6);
         head.right.right = new TreeNode(7);
 
-        preOrder(head);
+        preorder(head);
         System.out.println();
         System.out.println("先序遍历递归版");
 
-        inOrder(head);
+        inorder(head);
         System.out.println();
         System.out.println("中序遍历递归版");
 
-        posOrder(head);
+        postorder(head);
         System.out.println();
         System.out.println("后序遍历递归版");
 
